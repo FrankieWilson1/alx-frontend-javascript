@@ -100,6 +100,7 @@ class Teacher implements TeacherInterface {
 function createEmployee(salary: number | string): Director | Teacher {
     const numericSalary = typeof salary === 'string' ? parseFloat(salary) : salary;
 
+    // if (salary < 500)
     if (numericSalary < 500) {
         return new Teacher();
     } else {
