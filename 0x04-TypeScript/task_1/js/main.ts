@@ -55,8 +55,10 @@ interface printTeacher {
  * @returns 
  */
 function printTeacher(firstName:string, lastName:string): string {
-    return `${firstName[0]}. ${lastName}`;
+    return `${firstName}. ${lastName}`;
 }
+
+// { firstName, lastName }
 
 // 4. Writing a class
 
@@ -116,3 +118,5 @@ class StudentClass {
         return this.firstName;
     }
 }
+
+console.log(printTeacher("John", "Doe"));
