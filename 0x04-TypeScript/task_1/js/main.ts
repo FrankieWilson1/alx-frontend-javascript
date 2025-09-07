@@ -33,16 +33,16 @@ interface Director extends Teacher {
     numberOfReports: number;
 }
 
-// Printing the Teachers
+//3. Printing the Teachers
 
 /**
- * @interface printTeacher
+ * @interface printTeacherFunction
  * @description Defines the type signature for a function that prints a teacher's formatted name.
  * @param {string} firstName - The first name of the teacher.
  * @param {string} lastName - The last name of the teacher.
  * @returns {string} A formatted string containing the teacher's first initial and last name.
  */
-interface printTeacher {
+interface printTeacherFunction {
     (firstName: string, lastName: string): string;
 }
 
